@@ -1,0 +1,50 @@
+.custom-btn {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 5px;
+  padding: 10px 25px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.custom-btn {
+  background: rgb(5, 86, 86);
+  border: none;
+  z-index: 1;
+}
+.custom-btn:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background-color: #45b8c5;
+  background-image: linear-gradient(315deg, #45b8c5 0%, #87e1eb 74%);
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+.custom-btn:hover {
+  color: #000;
+}
+.custom-btn:hover:after {
+  top: auto;
+  bottom: 0;
+  height: 100%;
+}
+.custom-btn:active {
+  top: 2px;
+}
